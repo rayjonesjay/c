@@ -1,0 +1,30 @@
+programs instructions are stored in the code section of the memory
+bottom of memory / highest memory address 
+the stack is allocated at highest memory address to leave space for it to change (shrink and grow)
+
+the amount of stack space grows and shrinks as functions are called and retrurned from that is why it is 
+located at the highest memory address
+
+when a function is active , that is when space for its variables and parameters are allocated
+
+a stack frame / call frame is a section in memory that contains all the info needed to manage 
+a single function call.
+
+each time a function is called a stack frame is created and pushed on to the stack
+once the function is returned the stack frame is poped from the stack 
+
+the process of setting up the stack frame for a function call and managing its execution
+is called function's activation.
+
+
+the programs instructions are stored in the `code` section of memory. so there is a section callec code that stores the instructions that manipulate the data.
+
+
+global variables are stored in the `data` section , local variables are stored on the stack when the function in which they are declared is active.
+
+the `data` section does not grow or shrink, its storage space is constant through the entire run of the program
+
+the more the program grows the more the heap consumes memory
+
+
+### C pointer variables

@@ -31,7 +31,7 @@ int change(int amount) {
     int val;
     val = g_x;
     printf("%d\n",g_x);
-    g_x += amount;
+    g_x += amount; //changing the global value by increasing 10 to it
     printf("%d\n",g_x);
     printf("%d\n",val);
     return val;
